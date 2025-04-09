@@ -1,11 +1,14 @@
 # LINKED LIST SORTED App
 
-This is a fresh laravel 12 application for LINKED LIST SORTED (linked lists that keeps values always sorted)
+This is a fresh laravel 12 application for LINKED LIST SORTED (linked lists that always keep values sorted)
 
-# How it works?
-- It strictly uses the next_id column to insert, update, delete or sort the items of the list.
-- It never uses sorting from the table by value or any other DB sorting mechanisms because it contradicts with sorted linked list concept.
-- When adding, editing or deleting it travers the list using the next_id column to determine the position of the item and its surrounding and update them accordingly.
+# How does it work?
+- It strictly uses the next_id column to insert, update, delete, or sort the list items.
+- It never uses sorting from the DB by value or any other DB sorting mechanisms because it will contradict the sorted linked list concept.
+- When adding, editing, or deleting, it traverses the list using the next_id column to determine the position of the item and its surroundings and updates them accordingly.
+
+- In the Tests folder are different feature tests that makes sure the app works as intended.
+- At the end of this file are screenshots of how the app looks visually.
 
 
 ## Requirements
@@ -105,3 +108,34 @@ Open your browser and navigate to `http://localhost`.
 
 #### 1. Run tests locally
     ./vendor/bin/sail artisan test
+
+
+### Screenshots:
+
+
+![Screenshot from 2025-04-08 12-37-01](https://github.com/user-attachments/assets/4dda6d96-1d87-41e3-a9f6-d75e69e3855d)
+
+![Screenshot from 2025-04-08 12-37-29](https://github.com/user-attachments/assets/607eae95-332f-4b48-b520-e48e3d50de9a)
+
+![Screenshot from 2025-04-08 12-37-44](https://github.com/user-attachments/assets/0157f484-95fa-4cb1-b6e6-1ae9e7ac312f)
+
+![Screenshot from 2025-04-08 12-38-05](https://github.com/user-attachments/assets/cf0f8d89-88b4-494d-b528-00caa350110b)
+
+![Screenshot from 2025-04-08 12-38-26](https://github.com/user-attachments/assets/136a2572-2b15-466d-9630-e631d0cf7789)
+
+![Screenshot from 2025-04-08 12-38-44](https://github.com/user-attachments/assets/933e00ec-e0a3-4381-9876-5e6aaf15fbf9)
+
+![Screenshot from 2025-04-08 12-39-18](https://github.com/user-attachments/assets/15696773-8c6d-4540-9acc-f9aa84f586f2)
+
+![Screenshot from 2025-04-08 12-40-37](https://github.com/user-attachments/assets/5249cde7-c0c4-45ee-a050-10d8fa066233)
+
+![Screenshot from 2025-04-08 12-40-54](https://github.com/user-attachments/assets/8a341726-19ff-469e-b52f-bcf22b2ebf6b)
+
+![Screenshot from 2025-04-08 12-41-08](https://github.com/user-attachments/assets/bc90db04-fe65-45a6-8638-62d36db00c91)
+
+![Screenshot from 2025-04-08 12-42-35](https://github.com/user-attachments/assets/d6bbf4a5-d223-4b9e-9b43-88400e348b68)
+
+![Screenshot from 2025-04-08 12-43-29](https://github.com/user-attachments/assets/d142b0ff-ed78-4b41-abcf-fa1ef44bd1f4)
+
+![image](https://github.com/user-attachments/assets/998061ce-75ad-48d7-ac50-f33fafd9d528)
+
