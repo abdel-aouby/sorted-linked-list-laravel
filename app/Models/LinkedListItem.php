@@ -148,7 +148,7 @@ class LinkedListItem extends Model
         });
     }
 
-    public function updateNextIdSurroundingItems(LinkedListItem $item): void
+    private function updateNextIdSurroundingItems(LinkedListItem $item): void
     {
         DB::transaction(function() use ($item) {
             $allItems = $item->linkedList->items();
