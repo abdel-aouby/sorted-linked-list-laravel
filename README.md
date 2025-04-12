@@ -1,11 +1,12 @@
-# LINKED LIST SORTED App
+# SORTED LINKED LIST App
 
-This is a fresh laravel 12 application for LINKED LIST SORTED (linked lists that always keep values sorted)
+This is a fresh laravel 12 application implementing a SORTED LINKED LIST (linked lists that always keep values sorted)
 
 # How does it work?
 - It strictly uses the next_id column to insert, update, delete, or sort the list items.
 - It never uses sorting from the DB by value or any other DB sorting mechanisms because it will contradict the sorted linked list concept.
 - When adding, editing, or deleting, it traverses the list using the next_id column to determine the position of the item and its surroundings and updates them accordingly.
+- Each list accepts either string or integer values, but not both.
 
 - In the Tests folder are different feature tests that makes sure the app works as intended.
 - At the end of this file are screenshots of how the app looks visually.
